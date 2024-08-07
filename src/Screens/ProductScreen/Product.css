@@ -1,0 +1,134 @@
+.product-container {
+    padding: 3rem 2rem;
+}
+
+.products-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: max-content;
+    row-gap: 1rem;
+}
+
+.product-box {
+    padding: 1rem 3rem;
+}
+
+.product {
+    min-width: 10rem;
+    max-width: 100%;
+    height: 18rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.aluminium-scrap {
+    background-image: url(/assets/products/aluminium-scrap.jpg);
+    background-position: left;
+}
+
+.copper-cathode {
+    background-image: url(/assets/products/copper_cathode_scrap.jpg);
+}
+
+.plastic {
+    background-image: url(/assets/products/plastic_scrap.jpg);
+    background-size: cover;
+}
+
+.rubber {
+    background-image: url(/assets/products/rubber_scrap.jpg);
+    background-size: cover;
+}
+
+.paper {
+    background-image: url(/assets/products/paper_scrap.jpg);
+    background-size: cover;
+}
+
+.ignots {
+    background-image: url(/assets/products/ignots_scrap.jpg);
+}
+
+.copper-wire {
+    background-image: url(/assets/products/copperwire_scrap.jpg);
+    background-size: cover;
+}
+
+.product button {
+    align-self: end;
+    margin-bottom: 0.5rem;
+}
+
+.product-showcase {
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding-bottom: 0.5rem !important;
+}
+
+.product-content {
+    margin-top: 3rem;
+}
+
+.product-navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.product-menu {
+    margin: 0rem 3rem;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    border: 1px solid transparent;
+    border-bottom-color: #ededed;
+    border-radius: 5px;
+}
+
+.product-menu:hover {
+    background-color: #ededed;
+    cursor: pointer;
+}
+
+.selected-menu {
+    font-weight: 600;
+    background-color: lightgrey;
+}
+
+.product-image {
+    width: 30rem;
+    height: auto;
+}
+
+.product-description-container {
+    padding: 1rem 3rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .product-navbar-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product-image {
+        width: 15rem;
+        height: auto;
+    }
+
+    .product-description-container {
+        padding: 1rem 2rem;
+    }
+}
