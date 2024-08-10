@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import MobileNavbar from "./MobileNavbar";
+import Home from "../../assets/logo.png"
 
 const Header = () => {
   
@@ -14,26 +15,25 @@ const Header = () => {
     if (
       mobileNavbarContainer &&
       mobileNavbarContainer.style &&
-      mobileNavbarContainer.style.height === "15rem"
+      mobileNavbarContainer.style.height === "16rem"
     ) {
       mobileNavbarContainer.style.height = "0rem";
       header.style.boxShadow = "0px 3px 6px lightgrey";
     } else {
-      mobileNavbarContainer.style.height = "15rem";
+      mobileNavbarContainer.style.height = "16rem";
       header.style.boxShadow = "none";
     }
   };
 
   return (
-    <header id="header-container">
-
+    <header id="header-container" className="header-hide">
 
       {/* Desktop header starts*/}
       <div className="desktop-header-container">
         <div className="desktop-header">
           <div className="logo-container">
             <img
-              src="/assets/logo.png"
+              src={Home}
               alt="logo_not_loaded"
               className="comp-logo"
             />
@@ -81,7 +81,7 @@ const Header = () => {
           </div>
           <div className="logo-container">
             <img
-              src="/assets/logo.png"
+              src={Home}
               alt="logo_not_loaded"
               className="comp-logo"
             />

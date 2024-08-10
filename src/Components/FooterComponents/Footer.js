@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import HomeLogo from "../../assets/logo.png";
 
 const Footer = () => {
 
@@ -14,7 +15,7 @@ const Footer = () => {
           <div className="footer-image-container">
             <img
               className="footer-img-logo"
-              src="/assets/logo.png"
+              src={HomeLogo}
               alt="no_logo-found"
             />
           </div>

@@ -11,7 +11,7 @@ const MobileSidebar = () => {
     if (
       mobileNavbarContainer &&
       mobileNavbarContainer.style &&
-      mobileNavbarContainer.style.height === "15rem"
+      mobileNavbarContainer.style.height === "16rem"
     ) {
       mobileNavbarContainer.style.height = "0rem";
     } 

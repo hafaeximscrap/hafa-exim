@@ -30,6 +30,30 @@
   <body style="background-color: #f5f5f5">
     <div id="root"></div>
 
+    <!-- Header Header home and top transition -->
+    <script>
+      window.addEventListener("load", headerShadowToggle);
+      window.addEventListener("scroll", headerShadowToggle);
+
+      function headerShadowToggle() {
+        // console.log("window.screenY : ", window.scrollY);
+        const header = document.getElementById("header-container");
+        if (window.scrollY > 150) {
+          header.classList.add("header-show");
+          header.classList.remove("header-hide");
+          setTimeout(() => {
+            header.style.display = "block";
+          }, 500)
+        } else {
+          header.classList.remove("header-show");
+          header.classList.add("header-hide");
+          setTimeout(() => {
+            header.style.display = "none";
+          }, 500);
+        }
+      }
+    </script>
+
     <!-- Bootstrap CSS framework -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

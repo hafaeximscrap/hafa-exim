@@ -2,6 +2,10 @@ import React from "react";
 import "./About.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import image1 from "../../assets/Scrap2.jpg"
+import image2 from "../../assets/Scrap3.jpg"
+import image3 from "../../assets/Scrap4.jpg"
+import image4 from "../../assets/Scrap5.jpg"
 
 const Home = () => {
   return (
@@ -27,28 +31,28 @@ const Home = () => {
             <div>
               <img
                 className="about-img"
-                src="/assets/Scrap2.jpg"
+                src={image1}
                 alt="no_img_found"
               />
             </div>
             <div>
               <img
                 className="about-img"
-                src="/assets/Scrap3.jpg"
+                src={image2}
                 alt="no_img_found"
               />
             </div>
             <div>
               <img
                 className="about-img"
-                src="/assets/Scrap4.jpg"
+                src={image3}
                 alt="no_img_found"
               />
             </div>
             <div>
               <img
                 className="about-img"
-                src="/assets/Scrap5.jpg"
+                src={image4}
                 alt="no_img_found"
               />
             </div>

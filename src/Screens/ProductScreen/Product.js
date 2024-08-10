@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import "./Product.css";
+import aluminiumScrap from "../../assets/products/aluminium-scrap.jpg";
+import copperCathodeScrap from "../../assets/products/copper_cathode_scrap.jpg";
+import copperWireScrap from "../../assets/products/copperwire_scrap.jpg";
+import ignotsScrap from "../../assets/products/ignots_scrap.jpg";
+import paperScrap from "../../assets/products/paper_scrap.jpg";
+import plasticScrap from "../../assets/products/plastic_scrap.jpg";
+import rubberScrap from "../../assets/products/rubber_scrap.jpg";
+
 const Product = () => {
   const [ProductListShow, setProductListShow] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState("");
   const ProductDetails = [
-    { imgpath: "/assets/products/aluminium-scrap.jpg", name: "aluminium" },
-    {
-      imgpath: "/assets/products/copper_cathode_scrap.jpg",
-      name: "coppercathode",
-    },
-    { imgpath: "/assets/products/copperwire_scrap.jpg", name: "copperwire" },
-    { imgpath: "/assets/products/ignots_scrap.jpg", name: "ignots" },
-    { imgpath: "/assets/products/paper_scrap.jpg", name: "paper" },
-    { imgpath: "/assets/products/plastic_scrap.jpg", name: "plastic" },
-    { imgpath: "/assets/products/rubber_scrap.jpg", name: "rubber" },
+    { imgpath: aluminiumScrap, name: "aluminium" },
+    {imgpath: copperCathodeScrap, name: "coppercathode",},
+    { imgpath: copperWireScrap, name: "copperwire" },
+    { imgpath: ignotsScrap, name: "ignots" },
+    { imgpath: paperScrap, name: "paper" },
+    { imgpath: plasticScrap, name: "plastic" },
+    { imgpath: rubberScrap, name: "rubber" },
   ];
 
   const OpenProduct = (productName) => {

@@ -30,35 +30,35 @@
 }
 
 .aluminium-scrap {
-    background-image: url(/assets/products/aluminium-scrap.jpg);
+    background-image: url(../../assets/products/aluminium-scrap.jpg);
     background-position: left;
 }
 
 .copper-cathode {
-    background-image: url(/assets/products/copper_cathode_scrap.jpg);
+    background-image: url(../../assets/products/copper_cathode_scrap.jpg);
 }
 
 .plastic {
-    background-image: url(/assets/products/plastic_scrap.jpg);
+    background-image: url(../../assets/products/plastic_scrap.jpg);
     background-size: cover;
 }
 
 .rubber {
-    background-image: url(/assets/products/rubber_scrap.jpg);
+    background-image: url(../../assets/products/rubber_scrap.jpg);
     background-size: cover;
 }
 
 .paper {
-    background-image: url(/assets/products/paper_scrap.jpg);
+    background-image: url(../../assets/products/paper_scrap.jpg);
     background-size: cover;
 }
 
 .ignots {
-    background-image: url(/assets/products/ignots_scrap.jpg);
+    background-image: url(../../assets/products/ignots_scrap.jpg);
 }
 
 .copper-wire {
-    background-image: url(/assets/products/copperwire_scrap.jpg);
+    background-image: url(../../assets/products/copperwire_scrap.jpg);
     background-size: cover;
 }
 
