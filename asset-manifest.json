@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/official/static/css/main.f456578e.css",
+    "main.js": "/official/static/js/main.5578856a.js",
+    "static/media/Scrap5.jpg": "/official/static/media/Scrap5.38097a0e256d8c4428f4.jpg",
+    "static/media/rubber_scrap.jpg": "/official/static/media/rubber_scrap.706706cf4d3cacb972d7.jpg",
+    "static/media/plastic_scrap.jpg": "/official/static/media/plastic_scrap.99701777afe859dca082.jpg",
+    "static/media/Scrap2.jpg": "/official/static/media/Scrap2.0673b5a02d8500f51963.jpg",
+    "static/media/paper_scrap.jpg": "/official/static/media/paper_scrap.1291f0fe6cf8b90fedae.jpg",
+    "static/media/Scrap.png": "/official/static/media/Scrap.979b24d03565628c694c.png",
+    "static/media/Scrap4.jpg": "/official/static/media/Scrap4.c8fd9320500dbc1e1425.jpg",
+    "static/media/copper_cathode_scrap.jpg": "/official/static/media/copper_cathode_scrap.8f2e2d94af40f4743cec.jpg",
+    "static/media/Scrap3.jpg": "/official/static/media/Scrap3.7d17827ea71b17892a69.jpg",
+    "static/media/ignots_scrap.jpg": "/official/static/media/ignots_scrap.a9e210f362640edbeb14.jpg",
+    "static/media/copperwire_scrap.jpg": "/official/static/media/copperwire_scrap.18bcd4ea59f821c214f4.jpg",
+    "static/media/aluminium-scrap.jpg": "/official/static/media/aluminium-scrap.e74abd3208686c9ed7a3.jpg",
+    "static/media/logo.png": "/official/static/media/logo.fb3879f2b9e734dddfc9.png",
+    "index.html": "/official/index.html",
+    "main.f456578e.css.map": "/official/static/css/main.f456578e.css.map",
+    "main.5578856a.js.map": "/official/static/js/main.5578856a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f456578e.css",
+    "static/js/main.5578856a.js"
+  ]
+}
