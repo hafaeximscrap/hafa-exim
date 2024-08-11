@@ -27,12 +27,10 @@ class App extends Component {
         <Header />
 
         {/* Screens */}
-        {/* <div id="screens"> */}
           <Home />
           <About />
           <Product />
           <Contact />
-        {/* </div> */}
 
         {/* Footer */}
         <Footer />

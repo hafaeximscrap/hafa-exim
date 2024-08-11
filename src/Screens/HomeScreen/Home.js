@@ -1,13 +1,14 @@
 import React from "react";
 import "./Home.css";
-import HomeLogo from "../../assets/logo.png";
+import HomeLogo from "../../assets/logo.jpeg";
+import MobileNavbar from "../../Components/HeaderComponents/MobileNavbar";
 
 const Home = () => {
 
   return (
     <section id="Home" className="home-container">
 
-      {/* Home image desktop header which will be hidden when the webpage is scrolled */}
+      {/* Home page:  desktop header which will be hidden when the webpage is scrolled */}
       <div id="home-image-header" className="desktop-header-container p-2">
         <div className="desktop-header">
           <div className="logo-container">
@@ -58,7 +59,7 @@ const Home = () => {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          <a href="#About">
+          <a href="#Contact">
             <button className="he-button"> Contact us</button>
           </a>
         </div>

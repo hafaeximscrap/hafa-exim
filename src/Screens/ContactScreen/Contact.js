@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -12,18 +13,29 @@ const Contact = () => {
       .sendForm("service_m66i8k6", "template_l5ay7qw", form.current, {
         publicKey: "DnPREEHp5GccDjLLI",
       })
-      // .sendForm("service_001f2ts", "template_pkdrwgf", form.current, {
-      //      publicKey: "e2F3pvCKkMYkbWieU",
-      //    })
       .then(
         () => {
           console.log("SUCCESS!");
           e.target.reset();
-          alert("Successfully sent!");
+          Swal.fire({
+            icon: "success",
+            title: "Successfully sent!",
+            text: "Our team will contact you shortly.",
+            showConfirmButton: false,
+            timer: 3000,
+            width: "25rem",
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
-          alert("Something went wrong. Please try again later");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong, please try again.",
+            timer: 3000,
+            showConfirmButton: false,
+            width: "25rem",
+          });
         }
       );
   };
@@ -45,11 +57,22 @@ const Contact = () => {
           <h5>Let's make it happen</h5>
           <p>
             Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            the <b>1500s</b>.
+            <br></br>
+            <address className="contact-address">
+              <p>
+                <b>
+                  Hafa Exim, 
+                  <br></br> 1234 NW Bobcat Lane, 
+                  <br></br> St. Robert,
+                  <br></br> MO 65584-5678.
+                </b>
+              </p>
+            </address>
+            Lorem Ipsum is simply dummy text.
           </p>
         </div>
-        {/* <div className="d-flex align-tems-center justify-content-center"> */}
+
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <input
             className="he-input"
@@ -82,10 +105,10 @@ const Contact = () => {
           ></textarea>
 
           <button type="submit" className="he-button send-button">
-            Send
+            <span> Send </span>
+            <span class="material-symbols-rounded send-icon"> send </span>
           </button>
         </form>
-        {/* </div> */}
       </div>
     </div>
   );

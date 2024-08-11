@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import MobileNavbar from "./MobileNavbar";
-import Home from "../../assets/logo.png"
+import Home from "../../assets/logo.jpeg"
 
 const Header = () => {
   

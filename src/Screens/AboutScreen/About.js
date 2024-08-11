@@ -76,7 +76,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="about-card row pt-5 align-items-center">
+      <div id="Why" className="about-card row pt-5 align-items-center">
         <div className="col-lg-3 col-md-12 col-sm-12">
           <h6 className="ta-left">Why choose us?</h6>
           <h3 className="ta-left">Provide perfect and practical services</h3>

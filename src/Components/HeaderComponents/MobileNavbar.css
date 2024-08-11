@@ -11,10 +11,12 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    top: 4rem;
+    top: 5rem;
     left: 0px;
     right: 0px;
     z-index: 10000;
+    background-color: #698a84;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 #mobile-navbar {
