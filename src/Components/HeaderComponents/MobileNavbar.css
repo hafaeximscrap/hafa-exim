@@ -56,8 +56,8 @@
     color: black;
 }
 
-.mobile-nav-link:hover {
+.mobile-nav-link:active, .mobile-nav-link:focus, .mobile-nav-link:hover {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
 }

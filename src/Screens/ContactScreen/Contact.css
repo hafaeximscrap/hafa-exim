@@ -36,14 +36,11 @@
 
 @media screen and (min-width: 1400px) {
     .contact-para {
-        width: calc(100vw - 80vw) !important;
-        /* height: calc(100vh - 60vh) !important; */
+        width: calc(100vw - 70vw) !important;
     }
 
     .contact-form {
         width: calc(100vw - 70vw) !important;
-        /* height: calc(100vh - 40vh) !important; */
-        /* gap: 2rem !important; */
     }
 
     .send-button {
@@ -85,24 +82,39 @@
 
 .send-button {
     font-size: smaller;
-    width: fit-content;
+    width: 7.5rem;
+    min-width: 7.5rem;
+    max-width: 7.5rem;
     height: 3rem;
     max-height: 3rem;
     padding: 1rem 1.5rem;
     align-self: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.3rem;
 }
 
 .send-icon {
-    transition: transform 0.2s linear, margin 0.2s linear;
+    transition: transform 0.3s linear;
+}
+
+.send-text {
+    width: 3rem;
+    transition: width 0.1s linear;
+    padding: 0;
+    margin: 0;
+}
+
+.send-button:hover .send-text {
+    width: 0rem;
+    overflow: hidden;
 }
 
 .send-button:hover .send-icon {
     transform: rotate(-30deg);
     margin-bottom: 0.3rem;
-    margin-left: 0.4rem;
+    /* margin-left: 0.4rem; */
 }
 
 .contact-address p {

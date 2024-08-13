@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 const Contact = () => {
+  let [loading, setLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm("service_m66i8k6", "template_l5ay7qw", form.current, {
@@ -17,6 +19,7 @@ const Contact = () => {
         () => {
           console.log("SUCCESS!");
           e.target.reset();
+          setLoading(false);
           Swal.fire({
             icon: "success",
             title: "Successfully sent!",
@@ -28,6 +31,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setLoading(false);
           Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -57,13 +61,12 @@ const Contact = () => {
           <h5>Let's make it happen</h5>
           <p>
             Lorem Ipsum has been the industry's standard dummy text ever since
-            the <b>1500s</b>.
-            <br></br>
+            the <b>1500s</b>.<br></br>
             <address className="contact-address">
               <p>
                 <b>
-                  Hafa Exim, 
-                  <br></br> 1234 NW Bobcat Lane, 
+                  Hafa Exim,
+                  <br></br> 1234 NW Bobcat Lane,
                   <br></br> St. Robert,
                   <br></br> MO 65584-5678.
                 </b>
@@ -104,10 +107,16 @@ const Contact = () => {
             required
           ></textarea>
 
-          <button type="submit" className="he-button send-button">
-            <span> Send </span>
-            <span class="material-symbols-rounded send-icon"> send </span>
-          </button>
+          {loading ? (
+            <button className="he-button send-button">
+              <div class="spinner-border text-light" />
+            </button>
+          ) : (
+            <button type="submit" className="he-button send-button">
+              <p class="send-text"> Send </p>
+              <span class="material-symbols-rounded send-icon"> send </span>
+            </button>
+          )}
         </form>
       </div>
     </div>

@@ -20,42 +20,34 @@ const MobileSidebar = () => {
   return (
     <div id="mobile-navbar-container">
       <ul id="mobile-navbar">
-        <a href="#Home">
+        <a href="#Home" className="mobile-nav-link">
           <li className="mobile-nav-list" onClick={() => HideSidebar()}>
             <div className="mobile-nav-link-container">
-              <a href="#Home" className="mobile-nav-link">
                 Home
-              </a>
             </div>
           </li>
         </a>
 
-        <a href="#About">
+        <a href="#About" className="mobile-nav-link">
           <li className="mobile-nav-list" onClick={() => HideSidebar()}>
             <div className="mobile-nav-link-container">
-              <a href="#About" className="mobile-nav-link">
                 About
-              </a>
             </div>
           </li>
         </a>
 
-        <a href="#Product">
+        <a href="#Product" className="mobile-nav-link">
           <li className="mobile-nav-list" onClick={() => HideSidebar()}>
             <div className="mobile-nav-link-container">
-              <a href="#Product" className="mobile-nav-link">
                 Product
-              </a>
             </div>
           </li>
         </a>
 
-        <a href="#Contact">
+        <a href="#Contact" className="mobile-nav-link">
           <li className="mobile-nav-list" onClick={() => HideSidebar()}>
             <div className="mobile-nav-link-container">
-              <a href="#Contact" className="mobile-nav-link">
                 Contact
-              </a>
             </div>
           </li>
         </a>

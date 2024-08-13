@@ -1,10 +1,15 @@
 import React from "react";
 import "./Header.css";
 import MobileNavbar from "./MobileNavbar";
-import Home from "../../assets/logo.jpeg"
+import Home from "../../assets/logo.jpeg";
 
 const Header = () => {
-  
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const showSidebar = () => {
     // console.log("entered")
     let mobileNavbarContainer = document.getElementById(
@@ -27,17 +32,18 @@ const Header = () => {
 
   return (
     <header id="header-container" className="header-hide">
-
       {/* Desktop header starts*/}
       <div className="desktop-header-container">
         <div className="desktop-header">
-          <div className="logo-container">
-            <img
-              src={Home}
-              alt="logo_not_loaded"
-              className="comp-logo"
-            />
+          <div
+            className="logo-container"
+            onClick={() => {
+              scrollTop();
+            }}
+          >
+            <img src={Home} alt="logo_not_loaded" className="comp-logo" />
           </div>
+
           <div className="navbar-container">
             <ul className="navbar">
               <li className="nav-list">
@@ -66,8 +72,6 @@ const Header = () => {
       </div>
       {/* Desktop header ends*/}
 
-
-
       {/* Mobile header starts*/}
       <div className="mobile-header-container">
         <div className="mobile-header">
@@ -79,19 +83,19 @@ const Header = () => {
           >
             <span class="material-symbols-rounded menu-icon ">menu</span>
           </div>
-          <div className="logo-container">
-            <img
-              src={Home}
-              alt="logo_not_loaded"
-              className="comp-logo"
-            />
+
+          <div
+            className="logo-container"
+            onClick={() => {
+              scrollTop();
+            }}
+          >
+            <img src={Home} alt="logo_not_loaded" className="comp-logo" />
           </div>
         </div>
       </div>
       <MobileNavbar />
-       {/* Mobile header ends*/}
-
-
+      {/* Mobile header ends*/}
     </header>
   );
 };
