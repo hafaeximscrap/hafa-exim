@@ -40,20 +40,28 @@
       window.addEventListener("scroll", headerShadowToggle);
 
       function headerShadowToggle() {
-        // console.log("window.screenY : ", window.scrollY);
+        console.log("window.screenY : ", window.scrollY);
         const header = document.getElementById("header-container");
-        if (window.scrollY > 40) {
+        const homeHeader = document.getElementById("home-image-header");
+        
+        if (window.scrollY > 80) {
+          //showing header
           header.classList.add("header-show");
           header.classList.remove("header-hide");
-          // setTimeout(() => {
-          //   header.style.display = "block";
-          // }, 500)
-        } else {
-          header.classList.remove("header-show");
+
+          //hiding home header
+          homeHeader.classList.add("home-header-hide")
+          homeHeader.classList.remove("home-header-show");
+        } 
+        
+        if(window.scrollY < 95) {
+          // hiding header
           header.classList.add("header-hide");
-          // setTimeout(() => {
-          //   header.style.display = "none";
-          // }, 500);
+          header.classList.remove("header-show");
+
+          // showing home header
+          homeHeader.classList.remove("home-header-hide");
+          homeHeader.classList.add("home-header-show");
         }
       }
     </script>

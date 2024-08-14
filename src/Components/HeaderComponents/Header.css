@@ -5,7 +5,7 @@
     top: 0;
     background-color: #fcfcfc;
     z-index: 1000;
-    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out, height 0.8s ease-in-out, padding 0.3s ease-in-out;
+    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out, height 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
 .logo-container:hover {
@@ -16,16 +16,14 @@
     opacity: 1;
     visibility: visible;
     padding: 0.5rem 1rem;
-    height: fit-content;
+    height: 5rem;
 }
 
 .header-hide {  
-    overflow: hidden; 
     opacity: 0;
     visibility: hidden;
     height: 0rem;
-    padding: 0rem !important;
-    
+    padding: 0rem !important;  
 }
 
 .desktop-header, .mobile-header {
