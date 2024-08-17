@@ -15,18 +15,12 @@ const Header = () => {
     let mobileNavbarContainer = document.getElementById(
       "mobile-navbar-container"
     );
-    let header = document.getElementById("header-container");
     // console.log(mobileNavbarContainer.style.height, "MobileNavbar.style.height")
-    if (
-      mobileNavbarContainer &&
-      mobileNavbarContainer.style &&
-      mobileNavbarContainer.style.height === "16rem"
-    ) {
+
+    if (mobileNavbarContainer?.style?.height === "16rem") {
       mobileNavbarContainer.style.height = "0rem";
-      header.style.boxShadow = "0px 3px 6px lightgrey";
     } else {
       mobileNavbarContainer.style.height = "16rem";
-      header.style.boxShadow = "none";
     }
   };
 

@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="author" content="abdul ~ ajthameem30@gmail.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
     <title>Hafa Exim</title>
+
     <!-- Icons -->
     <link
       rel="stylesheet"
@@ -31,7 +33,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: #f5f5f5">
+  <body id="body" style="background-color: #f5f5f5" >
     <div id="root"></div>
 
     <!-- Header Header home and top transition -->
@@ -66,6 +68,26 @@
       }
     </script>
 
+    <!-- Inspect control -->
+     <script>
+
+      function Indication(){
+        const body = document.getElementById("body");
+        // console.log(body.style, "--body")
+        body.style.cursor = "not-allowed"
+        body.title = "Not allowed"
+        setTimeout(() => {
+          body.style.cursor = ""
+          body.title = ""
+        }, 3000)
+      }
+
+      window.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        Indication()
+      })
+     </script>
+
     <!-- Bootstrap CSS framework -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -82,5 +104,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
