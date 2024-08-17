@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/official/static/css/main.7cd8e408.css",
-    "main.js": "/official/static/js/main.7e2fe687.js",
+    "main.css": "/official/static/css/main.c271d9aa.css",
+    "main.js": "/official/static/js/main.fe65abfd.js",
     "static/media/Scrap5.jpg": "/official/static/media/Scrap5.38097a0e256d8c4428f4.jpg",
     "static/media/rubber_scrap.jpg": "/official/static/media/rubber_scrap.706706cf4d3cacb972d7.jpg",
     "static/media/plastic_scrap.jpg": "/official/static/media/plastic_scrap.99701777afe859dca082.jpg",
@@ -16,11 +16,11 @@
     "static/media/aluminium-scrap.jpg": "/official/static/media/aluminium-scrap.e74abd3208686c9ed7a3.jpg",
     "static/media/logo.jpeg": "/official/static/media/logo.e24ffa4bc12e23a18e8a.jpeg",
     "index.html": "/official/index.html",
-    "main.7cd8e408.css.map": "/official/static/css/main.7cd8e408.css.map",
-    "main.7e2fe687.js.map": "/official/static/js/main.7e2fe687.js.map"
+    "main.c271d9aa.css.map": "/official/static/css/main.c271d9aa.css.map",
+    "main.fe65abfd.js.map": "/official/static/js/main.fe65abfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cd8e408.css",
-    "static/js/main.7e2fe687.js"
+    "static/css/main.c271d9aa.css",
+    "static/js/main.fe65abfd.js"
   ]
 }
