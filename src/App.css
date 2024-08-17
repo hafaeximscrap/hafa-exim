@@ -1,10 +1,35 @@
-p {
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  word-spacing: 0.5px;
-  text-align: justify;
-  padding: 1rem;
+/* webkit styles */
+::selection {
+  background-color: darkslategray;
+  color: white;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #698a84; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #698a84; 
+}
+
+/* Website font */
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Common styles */
 
 body {
   background-color: #f5f5f5;
@@ -15,9 +40,12 @@ html {
   scroll-behavior: smooth;
 }
 
-::selection {
-  background-color: darkslategray;
-  color: white;
+p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .App {
@@ -25,13 +53,9 @@ html {
   color: black;
 }
 
-.montserrat-regular {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
+/* ////////////////////////////// Site assets //////////////////////////////////////// */
 
+/* button */
 .he-button {
   border: 1px solid transparent;
   background: #698a84;
@@ -54,12 +78,31 @@ html {
   outline: none;
 }
 
+/* Inner section */
 .content-section {
   background-color: white;
   border-radius: 1rem;
   padding: 2.5rem 0rem;
   box-shadow: 2px 2px 10px #ededed;
 }
+/* Shadow */
+.he-shadow {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+
+/* Input */
+.he-input {
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ededed;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+/* //////////////////////////////// Site asset ends ///////////////////////////////////// */
+
+/* some random shits */
 
 .ta-left {
   text-align: left;
@@ -69,15 +112,3 @@ html {
   font-size: smaller;
 }
 
-.he-shadow {
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
-}
-
-.he-input {
-  padding: 1rem;
-  border-radius: 10px;
-  outline: none;
-  border: 1px solid #ededed;
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
-}
